@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div span id class</title>
+    <style>
+        .card{
+            border: 1px solid blue;
+            background: wheat;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .enhance{
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<!-- 
+    id vs class:(good practices)
+        + id should be unique on its own
+        + class could be reused
+    Practically they both behave in same way. 
+-->
+<!-- 
+    span vs div:(they are the same except div is block level and span is inline)
+ -->
+<body>
+    <div id="main-header">
+        <h1>Main header</h1>
+        <p>Content of my main header</p>
+    </div>
+    <ul id="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <!-- 
+        #<something> will convert directly to div
+        <anything>#<something> will convert into anything with similar above behaviour
+     -->
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum <span class="enhance">dolor sit amet consectetur adipisicing elit.</span> Exercitationem, aut?</p>
+    </div>
+    <div id="contact" class="card">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>Address: xyx place</li>
+            <li>Phone: u98987979</li>
+            <li>Email: some@lsjd.com</li>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>Copyright &copy;2019</p>
+    </div>
+</body>
+</html>
