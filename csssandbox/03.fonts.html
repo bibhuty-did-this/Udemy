@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fonts</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* 
+            CSS Units:
+                + Absolute:
+                    1. cm
+                    2. mm
+                    3. in
+                    4. px(1/96 of 1 inch)
+                    5. pt(1/72 of 1 inch)
+                    6. pc(12 pt)
+                + Relative:
+                    1. % - to parent element(not only applicable for fonts)
+                    2. em -  to font-size of parent element
+                    3. rem - to font-size of root element(16px)
+                    4. vw - To 1% of viewport width
+                    5. vh - To 1% of viewport height
+        */
+        body{
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            line-height: 1.6em;
+
+        }
+        
+        #welcome p span{
+            font-weight: bold;
+        }
+
+        #about span{
+            font-style: italic
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem, ipsum dolor sit amet <span>consectetur adipisicing elit. Esse, quae voluptatibus</span> labore est distinctio ipsam. Sit, iusto? Dignissimos nobis numquam necessitatibus mollitia, fugiat laudantium amet libero ex quo dolores velit!
+        Corporis dicta voluptatem, libero error eaque, ipsam ex tenetur blanditiis voluptatibus architecto at voluptate molestias quod earum dolores dignissimos minima nobis excepturi assumenda quasi dolor qui. Eius, iure blanditiis. Eum.
+        Vel itaque eum deserunt cumque eos! Id reiciendis perferendis quasi aperiam adipisci magnam ipsum commodi tempora at beatae obcaecati perspiciatis in recusandae unde voluptatibus aspernatur voluptate facere, accusantium neque. Quisquam!
+        A inventore odio maxime obcaecati quia sit aut, suscipit facilis. Iste cum dolorem vel error illo sequi. Nostrum ipsam similique cum soluta, aut, deleniti corrupti quas eius, dolore commodi ad?</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor <span>sit amet consectetur adipisicing elit. Iste,</span> veritatis repudiandae aliquam dignissimos eos cupiditate fugit rerum! Sit, odio error.</p>
+    </div>
+</body>
+</html>

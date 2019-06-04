@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Link State and Button Styling</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+        }
+        a{
+            color: #333;
+            text-decoration: none;
+
+        }
+        /* 
+            Sudo selector 
+        */
+        a:hover{
+            color: coral;
+            text-decoration: none;
+        }        
+        a:visited{
+            color: #fff;
+        } 
+        a:active{
+            /* Not recommended in real-time scenarios */
+            color: red;
+        }
+
+        /* 
+            Button syling
+        */
+        .btn{
+            background: #4c6ca0;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            color: #f4f4f4;
+            background: #446190; 
+        }
+        
+    </style>
+</head>
+<body>
+    <br>
+    <a href="#" class="btn">My Link</a>
+    <br><br>
+    <button class="btn">My Button</button>
+</body>
+</html>
+<!--  
+    States of links are:
+        1. Regular State
+        2. Hover State
+        3. Active State
+        4. Visited State
+    and they can be styled using sudo-selectors.
+-->
